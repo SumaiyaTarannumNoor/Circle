@@ -22,4 +22,6 @@ margin: 0;
 .App{
   overflow: hidden;
   color: var(--black);
+  background: linear-gradient(45deg, rgb(119, 39, 209), blue);
+  padding: 1rem 1rem;
 }
