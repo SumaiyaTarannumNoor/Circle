@@ -25,3 +25,12 @@ margin: 0;
   background: linear-gradient(45deg, rgb(119, 39, 209), blue);
   padding: 1rem 1rem;
 }
+
+.fade{
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 40%;
+  background-color: #2b1ac5;
+  filter: blur(80px);
+}
