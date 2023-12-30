@@ -13,3 +13,7 @@
   --location: rgb(38, 225, 238);
 --shedule: rgb(7, 89, 156);
 }
+
+body{
+font-family: 'Inter', sans-serif;
+}
