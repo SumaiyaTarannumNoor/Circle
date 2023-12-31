@@ -1,13 +1,13 @@
 import React from 'react'
 
-const home = () => {
+const Home = () => {
   return (
     <div className="Home">
-        <div className="Profile"></div>
-        <div className="Post"></div>
-        <div className="RightSide"></div>
+        <div className="Profile">Profile</div>
+        <div className="Post">Posts</div>
+        <div className="RightSide">RightSide</div>
     </div>
   )
 }
 
-export default home
+export default Home
