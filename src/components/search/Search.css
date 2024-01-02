@@ -20,8 +20,26 @@
     background-color: whitesmoke;
     border-radius: 10px;
     border-color: aliceblue;
+    opacity: 80%;
+ }
+ #Bar:hover{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border-color: aliceblue;
+    opacity: 1;
+    cursor: pointer;
  }
  .SearchIcon{
     color: #175cff;
-    font-weight: 200;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(60deg, rgb(119, 39, 209), #175cff);
+    border-radius: 6px;
+    padding: 6px;
+ }
+
+ .SearchIcon:hover{
+    color: white;
+    cursor: pointer;
  }
