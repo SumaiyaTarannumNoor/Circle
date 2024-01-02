@@ -1,2 +1,4 @@
 All the images, logos, icons are collected from Google.
 I own none of it.
+
+However, I have removed the backgrounds from logo.png, home.png, like.png, notlike.png, noti.png, share.png. 
