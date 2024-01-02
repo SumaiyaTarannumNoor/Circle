@@ -22,13 +22,14 @@ margin: 0;
 .App{
   overflow: hidden;
   color: var(--black);
-  background: linear-gradient(45deg, rgb(119, 39, 209), blue);
+  background: linear-gradient(45deg, rgb(119, 39, 209), #175cff);
+  color:#ffffff;
   padding: 1rem 1rem;
 }
 
 .fade{
   position: absolute;
-  width: 22rem;
+  width: 20rem;
   height: 14rem;
   border-radius: 40%;
   background-color: #2b1ac5;
