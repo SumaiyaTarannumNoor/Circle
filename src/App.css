@@ -36,3 +36,20 @@ margin: 0;
   background-color: #2b1ac5;
   filter: blur(80px);
 }
+
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background-color:#175cff;
+  border: none;
+  border-radius: 0.4rem;
+  height: 30px;
+  transition: all 100ms ease-in-out;
+}
+
+.button:hover{
+  background-color: #0643cf;
+  cursor: pointer;
+}
