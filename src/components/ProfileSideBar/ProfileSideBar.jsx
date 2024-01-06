@@ -21,7 +21,7 @@ const ProfileSideBar = () => {
             <div>
             <div className="Follow">
                 <span>Follower</span>
-                <span>1</span>
+                <span>4</span>
             </div>
             <div className="VerticalLine"></div>
             <div className="Follow">    
