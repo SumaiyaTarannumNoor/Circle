@@ -14,20 +14,21 @@ const PostShare = () => {
         <div>
             <input type="text" placeholder='Wanna say something???' />
             <div className="PostOptions">
-                <div className="Options">
+                <div className="Options" style={{color:"var(--photo)"}}>
                     <UilScenery/>
                     Photo
                 </div>
-                <div className="Options">
+                <div className="Options" style={{color:"var(--video)"}}>
                     <UilPlayCircle/>
                     Video
-                </div><div className="Options">
+                </div><div className="Options" style={{color:"var(--location)"}}>
                     <UilLocationPoint/>
                     Location
-                </div><div className="Options">
+                </div><div className="Options" style={{color:"var(--schedule)"}}>
                     <UilSchedule/>
                     Schedule
                 </div>
+                <button className="button share-button">Share</button>
             </div>
         </div>
     </div>

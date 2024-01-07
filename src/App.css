@@ -10,7 +10,7 @@
   --buttonBg: linear-gradient(98.63deg, #0643cf  70%, #175cff 30%);
   --inputColor: rgba(40, 52, 62, 0.07);
   --photo: #2b1ac5;
-  --video: #5d0fec;
+  --video: #3d0d96;
   --location: rgb(38, 225, 238);
 --shedule: rgb(7, 89, 156);
 }
@@ -46,6 +46,7 @@ margin: 0;
   border: none;
   border-radius: 0.4rem;
   height: 30px;
+  width: auto;
   transition: all 100ms ease-in-out;
 }
 
