@@ -1,0 +1,18 @@
+.Extras{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.NavBarIcon{ 
+    margin-top: 0.4rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 4rem;
+    justify-content: space-around;
+}
+
+.NavBarIcon>img{
+    height:2rem;
+    width: 2rem;
+}

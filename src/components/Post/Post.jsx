@@ -12,9 +12,9 @@ const Post = ({data}) => {
         <img src={data.img} alt="" />
 
         <div className="PostReactions">
-            <img src={data.liked? Like:NotLike} alt="" id='reactions'/>
-            <img src={Comment} alt="" id='reactions'/>
-            <img src={Share} alt="" id='reactions'/>
+            <img src={data.liked? Like:NotLike} alt=""/>
+            <img src={Comment} alt=""/>
+            <img src={Share} alt=""/>
         </div>
 
         <span>{data.likes} likes</span>
