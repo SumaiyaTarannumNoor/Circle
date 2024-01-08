@@ -22,14 +22,14 @@ export const PostsData = [
         img: Sakura,
         name: "Haruno Sakura",
         desc: "Gonna cut my hair.",
-        likes: 10000,
-        liked: true,
+        likes: 1000,
+        liked: false,
     },
     {
         img: Naruto,
         name: "Uzumaki Naruto",
         desc: "SASUKE.....",
         likes: 10,
-        liked: true,
+        liked: false,
     }
 ]    

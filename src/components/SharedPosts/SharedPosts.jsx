@@ -6,8 +6,8 @@ import { PostsData } from '../Data/PostsData'
 const SharedPosts = () => {
   return (
     <div className="SharedPosts">
-        {PostsData.map((posts, id)=>{
-            return <Post/>
+        {PostsData.map((post, id)=>{
+            return <Post data={post} id={id}/>
         })}
     </div>
   )

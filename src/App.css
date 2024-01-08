@@ -54,3 +54,7 @@ margin: 0;
   background-color: #0643cf;
   cursor: pointer;
 }
+
+::-webkit-scrollbar{
+  display: none;
+}
