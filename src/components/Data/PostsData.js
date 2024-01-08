@@ -26,7 +26,7 @@ export const PostsData = [
         liked: true,
     },
     {
-        img: Nauto,
+        img: Naruto,
         name: "Uzumaki Naruto",
         desc: "SASUKE.....",
         likes: 10,
