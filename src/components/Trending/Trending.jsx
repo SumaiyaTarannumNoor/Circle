@@ -3,7 +3,9 @@ import './Trending.css'
 
 const Trending = () => {
   return (
-    <div>Trending</div>
+    <div className="Trending">
+        <h3>Things to waste you time on</h3>
+    </div>
   )
 }
 
