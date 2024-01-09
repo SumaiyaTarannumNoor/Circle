@@ -1,4 +1,4 @@
-export const TrendData = [
+export const TrendingData = [
     {
         name: "Akatsuki",
         shares: 100000,

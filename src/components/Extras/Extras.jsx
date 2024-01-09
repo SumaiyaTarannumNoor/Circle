@@ -18,6 +18,10 @@ const Extras = () => {
         </div>
 
         <Trending/>
+
+        <button className="button ExtraButton">
+          <h3>Share</h3>
+        </button>
     </div>
   )
 }

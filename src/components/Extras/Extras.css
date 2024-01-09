@@ -16,3 +16,16 @@
     height:2rem;
     width: 2rem;
 }
+
+.ExtraButton{
+    height: 4rem;
+    width: 100%;
+    align-self: center;
+    background-color: aqua;
+    color: rgb(206, 10, 147);
+}
+
+.ExtraButton:hover{
+    background-color: rgb(206, 10, 147);
+    color: aqua;
+}
