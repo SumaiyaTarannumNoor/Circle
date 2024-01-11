@@ -1,11 +1,12 @@
 import React from 'react'
 
 import './Profile.css'
+import ProfileLeftSide from '../../components/ProfileLeftSide/ProfileLeftSide'
 
 const Profile = () => {
   return (
-    <div className="ProfileLeft">
-      <ProfileLeft/>
+    <div className="Profile">
+      <ProfileLeftSide/>
     </div>
   )
 }
