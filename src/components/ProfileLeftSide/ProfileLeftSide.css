@@ -1,6 +1,7 @@
-.Profile{
-    position: relative;
-    display: grid;
-    grid-template-columns: 19rem auto 20rem;
+.ProfileLeftSide{
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
+    align-items: center;
+    overflow: auto;
 }
