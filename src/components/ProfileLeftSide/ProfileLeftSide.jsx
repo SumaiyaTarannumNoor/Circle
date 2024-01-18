@@ -8,10 +8,9 @@ import FollowersCard from '../FollowersCard/FollowersCard'
 const ProfileLeftSide = () => {
   return (
     <div className="ProfileLeftSide">
-         <Search/>
-        {/* <Search/>
+        <Search/>
         <InfoCard/>
-        <FollowersCard/> */}
+        <FollowersCard/>
     </div>
   )
 }
