@@ -1,4 +1,4 @@
-.Profile{
+.ProfileMain{
     position: relative;
     display:grid;
     grid-template-columns: 19rem auto 20rem;

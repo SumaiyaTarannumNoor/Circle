@@ -1,13 +1,12 @@
 import React from 'react'
-import './ProfileLeftSide.css'
+import './MainProfileLeft.css'
 import Search from '../search/Search'
 import InfoCard from '../InfoCard/InfoCard'
 import FollowersCard from '../FollowersCard/FollowersCard'
 
-
-const ProfileLeftSide = () => {
+const MainProfileLeft = () => {
   return (
-    <div className="ProfileLeftSide">
+    <div className="MainProfileLeft">
         <Search/>
         <InfoCard/>
         <FollowersCard/>
@@ -15,4 +14,4 @@ const ProfileLeftSide = () => {
   )
 }
 
-export default ProfileLeftSide
+export default MainProfileLeft
