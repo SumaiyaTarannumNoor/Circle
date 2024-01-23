@@ -1,12 +1,11 @@
 import React from 'react'
-import './MainProfileLeft.css'
 import Search from '../search/Search'
 import InfoCard from '../InfoCard/InfoCard'
 import FollowersCard from '../FollowersCard/FollowersCard'
 
 const MainProfileLeft = () => {
   return (
-    <div className="MainProfileLeft">
+    <div className="Profile">
         <Search/>
         <InfoCard/>
         <FollowersCard/>

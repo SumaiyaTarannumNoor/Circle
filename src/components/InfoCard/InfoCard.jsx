@@ -7,7 +7,9 @@ const InfoCard = () => {
     <div className='InfoCard'>
             <div className="InfoHeader">
                 <h5>Things about YOU</h5>
+                <div>
                 <UilPen width='1.6rem' height='1.6rem'/>
+                </div>
             </div>
 
             <div className="information">
@@ -31,7 +33,7 @@ const InfoCard = () => {
               <span>Team 7</span>
             </div>
 
-            <button className='button'>Log Out</button>
+            <button className='button log-out'>Log Out</button>
     </div>
   )
 }

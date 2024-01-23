@@ -17,7 +17,7 @@ const Post = ({data}) => {
             <img src={Share} alt=""/>
         </div>
 
-        <span>{data.likes} likes</span>
+        <span style={{fontSize: '12px'}}>{data.likes} likes</span>
         <div className="description">
             <span><b>{data.name}</b></span>
             <span> {data.desc}</span>

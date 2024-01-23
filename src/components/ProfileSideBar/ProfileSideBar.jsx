@@ -4,6 +4,9 @@ import ProfileImage from '../../img/img1.jpg'
 import './ProfileSideBar.css'
 
 const ProfileSideBar = () => {
+
+  const ProfilePage = true;
+    
   return (
     <div className="ProfileSideBar">
         <div className="ProfileImages">
@@ -28,12 +31,24 @@ const ProfileSideBar = () => {
                 <span>Following</span>
                 <span>Uchiha Sasuke</span>
             </div>
+
+            {ProfilePage && (
+                <>
+                <div className="VerticalLine"></div>
+                <div className="Follow">
+                    <span>1</span>
+                    <span>Posts</span>
+                </div>
+                </>
+            )}
+
             </div>
             <hr />
           
 
         </div>
-        <span>My Profile</span>
+        {ProfilePage? '': <span>My Profile</span>}
+        
     </div>
   )
 }

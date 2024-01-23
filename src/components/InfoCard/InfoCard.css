@@ -27,3 +27,12 @@
 .button{
     margin-top: 1rem;
 }
+
+.InfoHeader>div:hover{
+    cursor: pointer;
+}
+
+.log-out:hover{
+    color: #175cff;
+    background-color: #ffffff;
+}
