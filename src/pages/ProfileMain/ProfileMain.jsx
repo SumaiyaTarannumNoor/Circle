@@ -14,6 +14,7 @@ function ProfileMain() {
             <div className="Profile-Center">
                 <ProfileSideBar/>
                 <Posts/>
+                <Extras/>
             </div>
         </div>
     )
