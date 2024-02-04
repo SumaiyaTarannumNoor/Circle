@@ -1,7 +1,7 @@
 import "./App.css"
-import Profile from "./pages/ProfileMain/ProfileMain";
-import Home from "./pages/Home/Home";
+// import Home from "./pages/Home/Home";
 import ProfileMain from "./pages/ProfileMain/ProfileMain";
+
 function App() {
   return (
     <div className="App">
