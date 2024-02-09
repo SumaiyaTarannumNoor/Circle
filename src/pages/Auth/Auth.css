@@ -6,3 +6,19 @@
     gap: 4rem;
     position: relative;
 }
+
+.Auth > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Left Side */
+.AuthLeft{
+    gap: 2rem;
+}
+
+.AuthLeft > img {
+    width: 16rem;
+    height: 16rem;
+}

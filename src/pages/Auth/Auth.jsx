@@ -12,6 +12,8 @@ const Auth = () => {
           <h4>Let's Ruin Your Life with Us!!!</h4>
         </div>
       </div>
+      
+      <h1>Form</h1>
     </div>
   )
 }
