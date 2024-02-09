@@ -22,3 +22,26 @@
     width: 16rem;
     height: 16rem;
 }
+
+.WebName > h1 {
+    font-size: 4rem;
+    background-color: var(--blue2);
+
+    /* Create the gradient */
+    background-image: var(--buttonBg);
+
+    /* Set the background size and repeat */
+    background-size: 100%;
+    background-repeat: repeat;
+     
+    /* Using text as a mask for the background */
+    /* This will show the gradient as a text colour */
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.WebName > h4 {
+    font-size: 1.2rem;
+}
