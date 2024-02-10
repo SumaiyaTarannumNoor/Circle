@@ -34,6 +34,13 @@ function SignUp(){
           <input type="text" placeholder='Password' className='InfoInput' name='password'/>
           <input type="text" placeholder='Confirm Password' className='InfoInput' name='confirmpassword'/>
         </div>
+
+        <div>
+          <span>Already have an account! LogIn</span>
+        </div>
+
+        <button className="button InfoButton" type='submit'>SignUp</button>
+
       </form>
     </div>
   )
