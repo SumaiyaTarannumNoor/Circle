@@ -45,3 +45,41 @@
 .WebName > h4 {
     font-size: 1.2rem;
 }
+
+.InfoForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.InfoInput{
+    border: 2px solid;
+    border-color: aqua;
+    border-radius: 4px;
+    margin: 2px;
+    background-color: var(--inputColor);
+    padding: 20px;
+    flex: 1;
+    
+}
+
+.InfoInput:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.InfoForm > div{
+    display: flex;
+    gap: 1rem;
+    height: 2rem;
+    width: 100%;
+
+}
+
+.InfoForm > h4{
+    font-size: 36px;
+    font-weight: 600;
+}
+
