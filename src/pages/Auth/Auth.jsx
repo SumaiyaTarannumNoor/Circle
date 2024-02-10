@@ -18,4 +18,18 @@ const Auth = () => {
   )
 }
 
+function SignUp(){
+  return(
+    <div className="AuthRight">
+      <form className="InfoForm">
+        <h4>Sign Up</h4>
+        <div>
+          <input type="text" placeholder='First Name' className='InfoInput'/>
+        </div>
+      </form>
+    </div>
+  )
+}
+
 export default Auth
+
