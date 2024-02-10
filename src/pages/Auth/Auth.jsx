@@ -13,7 +13,7 @@ const Auth = () => {
         </div>
       </div>
       
-      <h1>Form</h1>
+      <SignUp/>
     </div>
   )
 }
@@ -24,7 +24,8 @@ function SignUp(){
       <form className="InfoForm">
         <h4>Sign Up</h4>
         <div>
-          <input type="text" placeholder='First Name' className='InfoInput'/>
+          <input type="text" placeholder='First Name' className='InfoInput' name='FirstName'/>
+          <input type="text" placeholder='Last Name' className='InfoInput' name='LastName'/>
         </div>
       </form>
     </div>
