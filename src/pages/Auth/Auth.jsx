@@ -21,7 +21,7 @@ const Auth = () => {
 function SignUp(){
   return(
     <div className="AuthRight">
-      <form className="InfoForm">
+      <form className="InfoForm AuthForm">
         <h4>Sign Up</h4>
         <div>
           <input type="text" placeholder='First Name' className='InfoInput' name='firstname'/>
