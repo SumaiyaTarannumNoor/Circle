@@ -1,7 +1,7 @@
 import { useDisclosure } from '@mantine/hooks';
 import { Modal, Button } from '@mantine/core';
 
-function ProfileModal(modalOpened, setModalOpened) {
+function ProfileModal({modalOpened, setModalOpened}) {
   const [opened, { open, close }] = useDisclosure(false);
 
   return (
@@ -19,8 +19,6 @@ function ProfileModal(modalOpened, setModalOpened) {
             <h3>Your info that you have sold already...</h3>
         </form>
       </Modal>
-
-      <Button onClick={open}>Open centered Modal</Button>
     </>
   );
 }
