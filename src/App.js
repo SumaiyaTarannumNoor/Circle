@@ -9,8 +9,8 @@ function App() {
         <div className="fade" style={{top: '-6%', right:'0'}}></div>
         <div className="fade" style={{top: '34%', left: '-6rem'}}></div>
         {/* <Home/> */}
-        {/* <ProfileMain/> */}
-          <Auth/>
+        <ProfileMain/>
+          {/* <Auth/> */}
     </div>
   );
 }
