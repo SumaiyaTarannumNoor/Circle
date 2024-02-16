@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './InfoCard.css'
 import {UilPen} from '@iconscout/react-unicons'
+import ProfileModal from '../ProfileModal/ProfileModal'
+
 
 const InfoCard = () => {
 
@@ -12,6 +14,9 @@ const InfoCard = () => {
                 <h5>Things about YOU</h5>
                 <div>
                 <UilPen width='1.6rem' height='1.6rem' onClick={() => setModalOpened(true)}/>
+                <ProfileModal 
+                modalOpened = {modalOpened}
+                setModalOpened = {setModalOpened}/>
                 </div>
             </div>
 
