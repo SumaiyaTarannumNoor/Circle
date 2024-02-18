@@ -1,4 +1,6 @@
 <img src="https://github.com/SumaiyaTarannumNoor/Circle/blob/master/src/img/logo.png" alt="animated" width= "160" height="160"/><br>
+<img src="https://readme-typing-svg.demolab.com/?lines=Circle%20A%20Retrowave%20Themed%20Social%20Media%20Project&font=Fira%20Code&center=true&width=600&height=60&color=175cff&vCenter=true&pause=600&size=24" />
+
 # RETROWAVE THEME   
 # Starter Pack Link
 - https://github.com/ZainRk/SocialMedia-Starter
