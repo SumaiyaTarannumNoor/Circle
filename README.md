@@ -1,4 +1,4 @@
-# RETROWAVE THEME
+# RETROWAVE THEME   <a href="src\img\logo.png"></a> <br> <br>
 # Starter Pack Link
 - https://github.com/ZainRk/SocialMedia-Starter
 
