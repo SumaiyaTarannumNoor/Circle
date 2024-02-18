@@ -1,4 +1,5 @@
-# RETROWAVE THEME   <a href="src\img\logo.png"></a> <br> <br>
+<a href="![src\img\logo.png](https://github.com/SumaiyaTarannumNoor/Circle/blob/master/src/img/logo.png)"></a> <br> <br>
+# RETROWAVE THEME   
 # Starter Pack Link
 - https://github.com/ZainRk/SocialMedia-Starter
 
