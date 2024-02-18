@@ -1,4 +1,4 @@
-<a href="![src\img\logo.png](https://github.com/SumaiyaTarannumNoor/Circle/blob/master/src/img/logo.png)"></a> <br> <br>
+<img src="https://github.com/SumaiyaTarannumNoor/Circle/blob/master/src/img/logo.png" alt="animated" width= "600" height="600"/><br> <br>
 # RETROWAVE THEME   
 # Starter Pack Link
 - https://github.com/ZainRk/SocialMedia-Starter
