@@ -17,7 +17,6 @@ function ProfileModal({modalOpened, setModalOpened}) {
         overlayOpacity={0.60}
         overlayBlur={6}
         size="60%"
-        alignItems="right"
         overlayColor={
           theme.colorScheme === "dark"
           ? theme.colors.dark[10]
