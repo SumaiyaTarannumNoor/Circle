@@ -1,35 +1,43 @@
 import { useDisclosure } from '@mantine/hooks';
-import { Modal, Button, ColorSchemeProvider } from '@mantine/core';
+import { Modal, useMantineTheme, Button } from '@mantine/core';
 
 function ProfileModal({modalOpened, setModalOpened}) {
-  const [opened, { open, close }] = useDisclosure(false);
-
+  // const [opened, { open, close }] = useDisclosure(false);
+  const theme = useMantineTheme();
   return (
-    <>
-       <Modal
+    
+      <Modal
         opened={modalOpened}
         onClose={()=>setModalOpened(false)}
-        title="Authentication"
+        // overlayProps={{
+        //   backgroundOpacity: 0.60,
+        //   blur: 6,
+        //   size: '80%',
+        // }}
+        overlayOpacity={0.60}
+        overlayBlur={6}
+        size="60%"
+        alignItems="right"
         overlayColor={
-          ColorSchemeProvider === ""
+          theme.colorScheme === "dark"
+          ? theme.colors.dark[10]
+          : theme.colors.blue[6]
         }
-        overlayProps={{
-          backgroundOpacity: 0.55,
-          blur: 4,
-          size: 60
-        }}
       >
-        <form action="" className="InfoForm">
-            <h3>Your info that you have sold already...</h3>
+        <form style={{alignItems: "center"}} className='YourInfo' action="">
+          <h3>Your INFO that you have already SOLD!!!</h3>
 
-            <div>
-              <input type="text" className='InfoInput' name="FirstName" placeholder='First Name' />
-              
-              <input type="text" className='InfoInput' name="LastName" placeholder='Last Name' />
-            </div>
+          <div style={{alignItems: "center"}} className='InfoCard'>
+            <input type="text" className="InfoCard" name='FirstName' placeholder='First Name'/>
+            <input type="text" className="InfoCard" name='LastName' placeholder='Last Name'/>
+            <input type="text" className="InfoCard" name='WorksAt' placeholder='Works At'/>
+            <input type="text" className="InfoCard" name='LivesIn' placeholder='Lives In'/>
+          </div>
         </form>
       </Modal>
-    </>
+
+     
+  
   );
 }
 
