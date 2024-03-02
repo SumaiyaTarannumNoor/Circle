@@ -16,7 +16,7 @@ function ProfileModal({modalOpened, setModalOpened}) {
         // }}
         overlayOpacity={0.60}
         overlayBlur={6}
-        size="60%"
+        size="40%"
         overlayColor={
           theme.colorScheme === "dark"
           ? theme.colors.dark[10]
@@ -31,6 +31,12 @@ function ProfileModal({modalOpened, setModalOpened}) {
             <input type="text" className="InfoCard" name='LastName' placeholder='Last Name'/>
             <input type="text" className="InfoCard" name='WorksAt' placeholder='Works At'/>
             <input type="text" className="InfoCard" name='LivesIn' placeholder='Lives In'/>
+          </div>
+          <div style={{alignItems:"left"}} className='InfoCard'>
+           <h4>Profile Image</h4><input type="file" name="profileImage" className="InfoCard"/>
+            <h4>Cover Image</h4> <input type="file" name="coverImage" className="InfoCard" />
+
+            <buttont className="button">UPDATE</buttont>
           </div>
         </form>
       </Modal>
