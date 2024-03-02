@@ -5,7 +5,6 @@ import Home from "../../img/home.png"
 import Notification from "../../img/noti.png"
 import Comment from "../../img/comment.png"
 import {UilSetting} from '@iconscout/react-unicons'
-import {UilPen} from '@iconscout/react-unicons'
 import Trending from '../Trending/Trending'
 import ShareModal from '../ShareModal/ShareModal'
 

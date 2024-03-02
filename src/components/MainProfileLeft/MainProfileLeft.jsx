@@ -1,5 +1,5 @@
 import React from 'react'
-import Search from '../search/Search'
+import Search from '../Search/Search'
 import InfoCard from '../InfoCard/InfoCard'
 import FollowersCard from '../FollowersCard/FollowersCard'
 
