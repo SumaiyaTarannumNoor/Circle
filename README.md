@@ -82,4 +82,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 # Mantine Install
 
-## npm install @mantine/core @mantine/hooks
+`npm install @mantine/core @mantine/hooks`
+
+`npm install @mantine/core @mantine/core`
