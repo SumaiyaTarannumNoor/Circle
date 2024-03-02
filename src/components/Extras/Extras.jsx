@@ -1,13 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Extras.css'
 
 import Home from "../../img/home.png"
 import Notification from "../../img/noti.png"
 import Comment from "../../img/comment.png"
 import {UilSetting} from '@iconscout/react-unicons'
+import {UilPen} from '@iconscout/react-unicons'
 import Trending from '../Trending/Trending'
+import ShareModal from '../ShareModal/ShareModal'
 
 const Extras = () => {
+  const [modalOpened, setModalOpened] = useState(false)
   return (
     <div className="Extras">
         <div className="NavBarIcon">
@@ -19,9 +22,12 @@ const Extras = () => {
 
         <Trending/>
 
-        <button className="button ExtraButton">
-          <h3>Share</h3>
-        </button>
+        <div>
+        <button className="button ExtraButton" width='1.6rem' height='1.6rem' onClick={() => setModalOpened(true)}><h3>SHARE</h3> </button>
+                <ShareModal 
+                modalOpened = {modalOpened}
+                setModalOpened = {setModalOpened}/>
+        </div>
     </div>
   )
 }

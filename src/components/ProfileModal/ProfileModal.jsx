@@ -36,7 +36,7 @@ function ProfileModal({modalOpened, setModalOpened}) {
            <h4>Profile Image</h4><input type="file" name="profileImage" className="InfoCard"/>
             <h4>Cover Image</h4> <input type="file" name="coverImage" className="InfoCard" />
 
-            <buttont className="button">UPDATE</buttont>
+            <buttont className="button InfoButton">UPDATE</buttont>
           </div>
         </form>
       </Modal>

@@ -37,11 +37,14 @@ const onImageChange = (event) => {
                 </div><div className="Options" style={{color:"var(--location)"}}>
                     <UilLocationPoint/>
                     Location
-                </div><div className="Options" style={{color:"var(--schedule)"}}>
+                </div>
+                <div className="Options" style={{color:"var(--schedule)"}}>
                     <UilSchedule/>
                     Schedule
                 </div>
-                <button className="button share-button">Share</button>
+                <div className="Options">
+                    <button className="button share-button">Share</button>
+                </div>
                 <div style={{display: "none"}}>
                     <input type="file" name="MyImage" ref={imageRef} onChange={onImageChange}/>
                 </div>
