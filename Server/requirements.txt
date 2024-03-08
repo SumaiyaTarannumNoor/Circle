@@ -1,0 +1,5 @@
+server
+express
+mongoose
+body-parser
+nodemon
