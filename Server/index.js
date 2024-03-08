@@ -12,4 +12,4 @@ configDotenv()
 mongoose
     .connect(process.env.MONGO_DB, 
     {useNewUrlParser: true, useUnifiedTopology: true})
-    .then(() => app.listen(process.env.PORT, () => console.log("Running the Destruction...")))
+    .then(() => app.listen(process.env.PORT, () => console.log(`Running the Destruction at ${process.env.PORT}...`)))
