@@ -1,12 +1,15 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
+import { configDotenv } from 'dotenv';
 
 const app = express();
 app.use(bodyParser.json({ limit: '40mb', extended: true }))
 app.use(bodyParser.urlencoded({ limit: '40mb', extended: true }))
 
+configDotenv()
+
 mongoose
-    .connect("mongodb+srv://sumaiyatarannumnoor001:CIRCLEcircleCircle@cluster0.cdxraz7.mongodb.net/Circle?retryWrites=true&w=majority&appName=Cluster0", 
+    .connect(process.env.MONGO_DB, 
     {useNewUrlParser: true, useUnifiedTopology: true})
-    .then(() => app.listen(6000, () => console.log("Running the Destruction...")))
+    .then(() => app.listen(process.env.PORT, () => console.log("Running the Destruction...")))
