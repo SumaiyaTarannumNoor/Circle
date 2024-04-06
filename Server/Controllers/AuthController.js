@@ -1,4 +1,4 @@
-import UserModel from "../Models/userModel";
+import UserModel from "../Models/userModel.js";
 
 
 //Registering a new user
