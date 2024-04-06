@@ -1,11 +1,18 @@
 import UserModel from "../Models/userModel.js";
-
+import bcrypt from 'bcrypt'
 
 //Registering a new user
 export const registerUser = async(req, res) => {
     const {username, password, firstname, lastname} = req.body;
 
-    const newUser = new UserModel({username, password, firstname, lastname})
+    const salt = await bcrypt.genSalt(16)
+    const hashedPassword = await bcrypt.hash(password, salt)
+
+    const newUser = new UserModel({
+        username, 
+        password: hashedPassword, 
+        firstname, 
+        lastname})
 
     try{
 
