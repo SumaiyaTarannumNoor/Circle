@@ -2,6 +2,7 @@ import mongoose from "mongoose";
 
 const UserScheme = mongoose.Schema(
     {
+        _id: mongoose.Types.ObjectId,
         username:{
             type: String,
             required: true
@@ -33,5 +34,5 @@ const UserScheme = mongoose.Schema(
     {timestamps: true}
 )
 
-const UserModel = mongoose.model("Users", UserScheme);
+const UserModel = mongoose.model("users", UserScheme);
 export default UserModel
