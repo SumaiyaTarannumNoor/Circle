@@ -2,7 +2,6 @@ import mongoose from "mongoose";
 
 const UserScheme = mongoose.Schema(
     {
-        _id: mongoose.Types.ObjectId,
         username:{
             type: String,
             required: true
