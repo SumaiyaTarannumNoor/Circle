@@ -104,7 +104,7 @@ export const followUser = async(req, res) => {
             }
             else
             {
-                res.status(403).json("You are already following this user.")
+                res.status(403).json("Stop being nosy! You are already following them around.")
             }
 
         } catch (error) {
@@ -130,13 +130,13 @@ export const followUser = async(req, res) => {
 
             if(followUser.followers.includes(currentUserId))
             {
-                await followUser.updateOne({$push : {followers: currentUserId}})
-                await followingUser.updateOne({$push : {following: id}})
-                res.status(200).json("You have started to follow THIS USER.")
+                await followUser.updateOne({$pull : {followers: currentUserId}})
+                await followingUser.updateOne({$pull : {following: id}})
+                res.status(200).json("You GOT RID OF THIS USER.")
             }
             else
             {
-                res.status(403).json("You are already following this user.")
+                res.status(403).json("This User is not Followed by You.")
             }
 
         } catch (error) {
