@@ -1,3 +1,4 @@
+import mongoose from 'mongoose';
 import UserModel from "../Models/userModel.js";
 import userModel from "../Models/userModel.js";
 import bcrypt from 'bcrypt';
@@ -81,7 +82,7 @@ export const deleteUser = async (req, res) => {
 }
 
 
-// Follow a User
+//Follow a User
 export const followUser = async(req, res) => {
     const id = req.params.id;
     
@@ -98,9 +99,9 @@ export const followUser = async(req, res) => {
 
             if(!followUser.followers.includes(currentUserId))
             {
-                await followUser.updateOne({$push : {followers: currentUserId}})
-                await followingUser.updateOne({$push : {following: id}})
-                res.status(200).json("You have started to follow THIS USER.")
+                await followUser.updateOne({$push : {followers: currentUserId}});
+                await followingUser.updateOne({$push : {following: id}});
+                res.status(200).json("You have started to follow THIS USER.");
             }
             else
             {
@@ -113,8 +114,9 @@ export const followUser = async(req, res) => {
      } 
 };
 
+
 // UnFollow a User
-export const followUser = async(req, res) => {
+export const unfollowUser = async(req, res) => {
     const id = req.params.id;
     
      const {currentUserId} = req.body;
