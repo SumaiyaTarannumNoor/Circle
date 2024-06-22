@@ -1,9 +1,8 @@
 import express from "express";
-const router = express.Router()
+import { createPost } from "../Controllers/PostController.js";
+const router = express.Router();
 
-router.get('/', async(req, res)=>{
-    res.send("Post...")
-})
+router.post('/', createPost)
 
 export default router;
 
