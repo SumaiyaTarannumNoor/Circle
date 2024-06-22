@@ -8,9 +8,9 @@ const postSchema = mongoose.Schema({
 
 },
 {
-    timestamps: true,
+    timestamps: true
 });
 
 var PostModel = mongoose.model("Posts", postSchema)
-export default  PostModel;
+export default PostModel;
 
