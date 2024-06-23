@@ -89,9 +89,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 # For Backend
 
-To run the backend, please go to the "Server" folder.
+To run the backend, please go to the "Server" directory.
 
-Install the requirements from "requirements.txt"
+Install the requirements from the "requirements.txt" file.
 
 In the "Server" directory run:
 
