@@ -85,3 +85,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 `npm install @mantine/core @mantine/hooks`
 
 `npm install @mantine/core @mantine/core`
+
+
+# For Backend
+
+To run the backend, please go to the "Server" folder.
+
+Install the requirements from "requirements.txt"
+
+In the "Server" directory run:
+
+`npm start`
