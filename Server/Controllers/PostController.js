@@ -93,3 +93,16 @@ export const likePost = async (req, res) => {
         res.status(500).json(error)
     }
 }
+
+
+// Get Timeline Posts
+export const getTimelinePosts = async(req, res){
+    const userId = req.params.id;
+
+    try {
+        const currentUserPosts = await PostModel.find({userId : userId})
+        const
+    } catch (error) {
+        
+    }
+}
