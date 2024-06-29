@@ -5,6 +5,7 @@ import Logo from '../../img/logo.png'
 const Auth = () => {
   return (
     <div className="Auth">
+       {/* Left Side */}
       <div className="AuthLeft">
         <img src={Logo} alt="" />
         <div className="WebName">
@@ -12,38 +13,9 @@ const Auth = () => {
           <h4>Let's Ruin Your Life with Us!!!</h4>
         </div>
       </div>
-      
-      <SignUp/>
-      {/* <LogIn/> */}
-    </div>
-  )
-}
 
-function LogIn(){
-  return(
-    <div className="AuthRight">
-      <form className="InfoForm AuthForm">
-        <h4>LogIn</h4>
-        <div>
-          <input type="text" placeholder='UserName' className='InfoInput' name='username'/>
-        </div>
-        <div>  
-          <input type="text" placeholder='Password' className='InfoInput' name='password'/>
-        </div>
-        <div>
-          <span style={{fontSize: '14px', fontFamily:'fantasy'}}>Don't have an account! SignUp</span>
-        </div>
-
-        <button className="button InfoButton" type='submit'>LogIn</button>
-
-      </form>
-    </div>
-  )
-}
-
-function SignUp(){
-  return(
-    <div className="AuthRight">
+      {/* Right Side */}
+      <div className="AuthRight">
       <form className="InfoForm AuthForm">
         <h4>Sign Up</h4>
         <div>
@@ -66,8 +38,10 @@ function SignUp(){
 
       </form>
     </div>
+    </div>
   )
 }
+
 
 export default Auth
 
