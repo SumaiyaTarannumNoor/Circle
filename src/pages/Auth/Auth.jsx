@@ -1,8 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Auth.css'
 import Logo from '../../img/logo.png'
 
 const Auth = () => {
+  const [isSignUp, setIsSignUp] = useState(false)
+
   return (
     <div className="Auth">
        {/* Left Side */}
@@ -17,7 +19,7 @@ const Auth = () => {
       {/* Right Side */}
       <div className="AuthRight">
       <form className="InfoForm AuthForm">
-        <h4>Sign Up</h4>
+        <h4>{isSignUp ? "Sign Up" : "Log In"}</h4>
         <div>
           <input type="text" placeholder='First Name' className='InfoInput' name='firstname'/>
           <input type="text" placeholder='Last Name' className='InfoInput' name='lastname'/>
