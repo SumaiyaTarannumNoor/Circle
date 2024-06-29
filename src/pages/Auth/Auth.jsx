@@ -20,23 +20,34 @@ const Auth = () => {
       <div className="AuthRight">
       <form className="InfoForm AuthForm">
         <h4>{isSignUp ? "Sign Up" : "Log In"}</h4>
-        <div>
-          <input type="text" placeholder='First Name' className='InfoInput' name='firstname'/>
-          <input type="text" placeholder='Last Name' className='InfoInput' name='lastname'/>
-        </div>
-        <div>
-          <input type="text" placeholder='UserName' className='InfoInput' name='username'/>
-        </div>
-        <div>
-          <input type="text" placeholder='Password' className='InfoInput' name='password'/>
-          <input type="text" placeholder='Confirm Password' className='InfoInput' name='confirmpassword'/>
-        </div>
+        {isSignUp && (
+      
+            <div>
+              <input type="text" placeholder="First Name" className="InfoInput" name="firstname" />
+              <input type="text" placeholder="Last Name" className="InfoInput" name="lastname" />
+            </div>
+        )}
+
+            <div>
+              <input type="text" placeholder="UserName" className="InfoInput" name="username" />
+            </div>
+            <div>
+              <input type="password" placeholder="Password" className="InfoInput" name="password" />
+
+              {isSignUp && (
+                <input type="password" placeholder="Confirm Password" className="InfoInput" name="confirmpassword" />
+              )}
+              
+            </div>
+
 
         <div>
           <span style={{fontSize: '14px', fontFamily:'fantasy'}}>Already have an account! LogIn</span>
         </div>
 
-        <button className="button InfoButton" type='submit'>SignUp</button>
+        <button className="button InfoButton" type='submit'>
+          {isSignUp ? "SignUp" : "Log In"}
+          </button>
 
       </form>
     </div>
