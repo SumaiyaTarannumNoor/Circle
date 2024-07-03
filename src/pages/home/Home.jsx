@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './Home.css'
-import Profile from '../../components/profile/Profile'
+import Profile from '../../components/Profile/Profile'
 import Posts from '../../components/Posts/Posts'
 import Extras from '../../components/Extras/Extras'
 

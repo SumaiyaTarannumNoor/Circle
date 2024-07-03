@@ -96,3 +96,8 @@ Install the requirements from the "requirements.txt" file.
 In the "Server" directory run:
 
 `npm start`
+
+
+# Webkit Speech Recognition
+
+Webkit Speech Recognition is implemented for the Post input area. Currently, it is supported by Google Chrome and Microsoft Edge.
