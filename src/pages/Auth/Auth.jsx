@@ -23,6 +23,11 @@ const Auth = () => {
     }
   }
 
+  const resetForm = () => {
+    setConfirmPassword(true);
+    setData({firstname:"", lastname:"", password:"", confirmpassword:"", username:""})
+  }
+
   return (
     <div className="Auth">
        {/* Left Side */}
@@ -53,14 +58,14 @@ const Auth = () => {
               <input type="password" placeholder="Password" className="InfoInput" name="password" onChange={handleChange}/>
 
               {isSignUp && (
-                <input type="password" placeholder="Confirm Password" className="InfoInput" name="confirmpassword" onChange={handleChange}/>
+                <input type="password" placeholder="Confirm Password" className="InfoInput" name="confirmpassword" onChange={handleChange} value={data.confirmpassword}/>
               )}
               
             </div>
             <span style={{display: confirmPassword? "none": "block", color:'yellow', fontSize:"16px", alignSelf:'flex-end', marginRight:"6px", fontWeight:"bold"}}>* Confirm Password is not same.</span>
 
         <div>
-          <span style={{fontSize: '16px', fontFamily:'fantasy', cursor: 'pointer'}} onClick = {()=>setIsSignUp((prev) => !prev)}>
+          <span style={{fontSize: '16px', fontFamily:'fantasy', cursor: 'pointer'}} onClick = {()=>{setIsSignUp((prev) => !prev); resetForm()}}>
             {isSignUp? "Already have an account. Log In!" : "Don't have an account? Sign Up"}</span>
         </div>
 
