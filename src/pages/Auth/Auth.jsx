@@ -10,6 +10,19 @@ const Auth = () => {
     setData({...data, [e.target.name] : e.target.value})
   }
 
+
+  const handleSubmit = (e)=> {
+    e.preventDefault();
+
+    if(isSignUp)
+    {
+      if (data.password !== data.confirmpassword)
+      {
+      setConfirmPassword(false)
+      }
+    }
+  }
+
   return (
     <div className="Auth">
        {/* Left Side */}
@@ -23,7 +36,7 @@ const Auth = () => {
 
       {/* Right Side */}
       <div className="AuthRight">
-      <form className="InfoForm AuthForm">
+      <form className="InfoForm AuthForm" onSubmit={handleSubmit}>
         <h4>{isSignUp ? "Sign Up" : "Log In"}</h4>
         {isSignUp && (
       
@@ -44,7 +57,7 @@ const Auth = () => {
               )}
               
             </div>
-            <span style={{display: confirmPassword? "none": "block"}}>* Confirm Password is not same.</span>
+            <span style={{display: confirmPassword? "none": "block", color:'yellow', fontSize:"16px", alignSelf:'flex-end', marginRight:"6px", fontWeight:"bold"}}>* Confirm Password is not same.</span>
 
         <div>
           <span style={{fontSize: '16px', fontFamily:'fantasy', cursor: 'pointer'}} onClick = {()=>setIsSignUp((prev) => !prev)}>
