@@ -44,7 +44,7 @@ const Auth = () => {
               )}
               
             </div>
-            <span>* Confirm Password is not same.</span>
+            <span style={{display: confirmPassword? "none": "block"}}>* Confirm Password is not same.</span>
 
         <div>
           <span style={{fontSize: '16px', fontFamily:'fantasy', cursor: 'pointer'}} onClick = {()=>setIsSignUp((prev) => !prev)}>
