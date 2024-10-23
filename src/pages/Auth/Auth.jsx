@@ -18,7 +18,8 @@ const Auth = () => {
 
     if(isSignUp)
     {
-      data.password !== data.confirmpassword ? dispatch(signUp(data)) : setConfirmPassword(false) 
+      data.password !== data.confirmpassword 
+      ? dispatch(signUp(data)) : setConfirmPassword(false) 
     }
     else{
       dispatch(logIn(data))
@@ -44,7 +45,7 @@ const Auth = () => {
       {/* Right Side */}
       <div className="AuthRight">
       <form className="InfoForm AuthForm" onSubmit={handleSubmit}>
-        <h4>{isSignU p ? "Sign Up" : "Log In"}</h4>
+        <h4>{isSignUp ? "Sign Up" : "Log In"}</h4>
         {isSignUp && (
       
             <div>
