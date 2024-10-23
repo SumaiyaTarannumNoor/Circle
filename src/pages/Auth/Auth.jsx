@@ -44,7 +44,7 @@ const Auth = () => {
       {/* Right Side */}
       <div className="AuthRight">
       <form className="InfoForm AuthForm" onSubmit={handleSubmit}>
-        <h4>{isSignUp ? "Sign Up" : "Log In"}</h4>
+        <h4>{isSignU p ? "Sign Up" : "Log In"}</h4>
         {isSignUp && (
       
             <div>
