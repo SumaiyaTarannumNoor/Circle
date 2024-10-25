@@ -2,33 +2,38 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import { configDotenv } from 'dotenv';
-import AuthRoute from './Routes/AuthRoute.js'
-import UserRoute from './Routes/UserRoute.js'
-import PostRoute from './Routes/PostRoute.js'
+import cors from 'cors';
+import AuthRoute from './Routes/AuthRoute.js';
+import UserRoute from './Routes/UserRoute.js';
+import PostRoute from './Routes/PostRoute.js';
 
-//Routes
+// Initialize dotenv
+configDotenv();
+
+// Create an Express app
 const app = express();
 
+// Middleware
+app.use(bodyParser.json({ limit: '40mb', extended: true }));
+app.use(bodyParser.urlencoded({ limit: '40mb', extended: true }));
 
+// CORS configuration
+const corsOptions = {
+    origin: 'http://localhost:3000', // Your frontend URL
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true, // Allow credentials if needed
+};
+app.use(cors(corsOptions));
 
-//Middleware
-app.use(bodyParser.json({ limit: '40mb', extended: true }))
-app.use(bodyParser.urlencoded({ limit: '40mb', extended: true }))
-
-configDotenv()
-
-// mongoose
-//     .connect(process.env.MONGO_DB, 
-//     {useNewUrlParser: false, useUnifiedTopology: true})
-//     .then(() => app.listen(process.env.PORT, () => console.log(`Running the Destruction at ${process.env.PORT}...`)))
-//     .catch((error) => console.log(`Unable to run the Destruction at ${process.env.PORT}`));
-
+// MongoDB connection
 mongoose
-    .connect(process.env.MONGO_DB)
-    .then(() => app.listen(process.env.PORT, () => console.log(`Running the Destruction at ${process.env.PORT}...`)))
-    .catch((error) => console.log(`Unable to run the Destruction at ${process.env.PORT}`, error)); // Include error parameter
+    .connect(process.env.MONGO_DB, { useNewUrlParser: true, useUnifiedTopology: true })
+    .then(() => {
+        app.listen(process.env.PORT, () => console.log(`Server running on port ${process.env.PORT}...`));
+    })
+    .catch((error) => console.error(`Error connecting to MongoDB: ${error}`));
 
-// Usage of routes
+// Route usage
 app.use('/auth', AuthRoute);  
 app.use('/user', UserRoute);
 app.use('/post', PostRoute);

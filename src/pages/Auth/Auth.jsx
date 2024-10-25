@@ -1,7 +1,8 @@
-import React, {useState} from 'react'
-import './Auth.css'
-import Logo from '../../img/logo.png'
-import {useDispatch} from 'react-redux'
+import React, {useState} from 'react';
+import './Auth.css';
+import Logo from '../../img/logo.png';
+import { logIn, signUp } from "../../actions/AuthAction.js";
+import {useDispatch} from 'react-redux';
 
 const Auth = () => {
   const [isSignUp, setIsSignUp] = useState(true)
@@ -13,18 +14,21 @@ const Auth = () => {
   }
 
 
-  const handleSubmit = (e)=> {
+  const handleSubmit = (e) => {
     e.preventDefault();
-
-    if(isSignUp)
-    {
-      data.password !== data.confirmpassword 
-      ? dispatch(signUp(data)) : setConfirmPassword(false) 
-    }
-    else{
-      dispatch(logIn(data))
+  
+    if (isSignUp) {
+      if (data.password === data.confirmpassword) {
+        dispatch(signUp(data));
+        setConfirmPassword(true);
+      } else {
+        setConfirmPassword(false);
+      }
+    } else {
+      dispatch(logIn(data));
     }
   };
+  
 
   const resetForm = () => {
     setConfirmPassword(true);
@@ -61,7 +65,7 @@ const Auth = () => {
               <input type="password" placeholder="Password" className="InfoInput" name="password" onChange={handleChange}/>
 
               {isSignUp && (
-                <input type="password" placeholder="Confirm Password" className="InfoInput" name="confirmpassword" onChange={handleChange} value={data.confirmpassword}/>
+                <input type="password" placeholder="Confirm Password" className="InfoInput" name="confirmpassword" onChange={handleChange} value={data.confirmPassword}/>
               )}
               
             </div>
