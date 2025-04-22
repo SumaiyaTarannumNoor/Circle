@@ -28,7 +28,8 @@ const CONNECTION = process.env.MONGO_DB;
 
 // MongoDB connection
 mongoose
-    .connect(CONNECTION, { useNewUrlParser: true, useUnifiedTopology: true })
+    mongoose.connect(CONNECTION, { useNewUrlParser: true, useUnifiedTopology: true })
+
     .then(() => {
         app.listen(PORT, () => console.log(`Server running on port ${PORT}...`));
     })
